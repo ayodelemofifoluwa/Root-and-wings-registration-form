@@ -115,4 +115,52 @@
     <footer class="w-full py-8 px-6 bg-[#0A241C] text-[#FEF8E0] text-center border-t border-[#10352A] mt-12">
         <div class="flex justify-center gap-6 mb-4">
             <a href="https://www.instagram.com/rootandwings1/" target="_blank" class="text-[#C68B27] hover:text-white text-sm font-bold tracking-wider transition-colors">Instagram</a>
-            <a href="https://www.tiktok.com/@rootandwings?is_from_webapp=1&sender_device=pc" target
+            <a href="https://www.tiktok.com/@rootandwings?is_from_webapp=1&sender_device=pc" target="_blank" class="text-[#C68B27] hover:text-white text-sm font-bold tracking-wider transition-colors">TikTok</a>
+        </div>
+        <p class="text-xs uppercase tracking-widest text-[#C68B27]">© 2026 Roots & Wings Fellowship. All rights reserved.</p>
+    </footer>
+
+    <!-- Frontend Script for API Connection -->
+    <script>
+        const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE'; // Replace with your actual web app URL if needed
+
+        const form = document.getElementById('registrationForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Processing... ⏳';
+
+            const payload = {
+                fullName: document.getElementById('fullName').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                phone: document.getElementById('phone').value.trim()
+            };
+
+            // If scriptURL is set, send data. Otherwise show mock success for testing
+            if(scriptURL && scriptURL.includes('macros.s')) {
+                fetch(scriptURL, { method: 'POST', body: JSON.stringify(payload) })
+                    .then(response => response.json())
+                    .then(data => {
+                        form.reset();
+                        submitBtn.classList.add('hidden');
+                        successMessage.classList.remove('hidden');
+                    })
+                    .catch(error => {
+                        alert('Registration error. Please try again.');
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Complete Registration 🚀';
+                    });
+            } else {
+                setTimeout(() => {
+                    form.reset();
+                    submitBtn.classList.add('hidden');
+                    successMessage.classList.remove('hidden');
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>
