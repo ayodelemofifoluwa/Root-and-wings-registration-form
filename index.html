@@ -3,164 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In-Laws or Outlaws | Event Registration</title>
+    <title>In-Laws or Outlaws | Roots & Wings</title>
+    
+    <!-- Open Graph Social Preview Meta Tags -->
+    <meta property="og:title" content="In-Laws or Outlaws | Roots & Wings">
+    <meta property="og:description" content="Navigating Family Dynamics in Relationships and Marriage. Nov 28, 2026 at 12 PM in Egbeda, Lagos.">
+    <meta property="og:image" content="https://i.imgur.com/1uduqhO.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Syne', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        poster: {
+                            bg: '#FEF8E0',
+                            whiteCanvas: '#FFFFFF',
+                            green: '#10352A',
+                            greenDark: '#0A241C',
+                            orange: '#E64A19',
+                            orangeHover: '#CD3E10',
+                            gold: '#C68B27',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #FEF8E0;
+        html, body {
+            background-color: #FEF8E0 !important;
+        }
+        .flyer-double-border {
+            background-color: #FFFFFF;
+            border: 4px solid #10352A;
+            box-shadow: 0 0 0 2px #E64A19, 0 15px 30px rgba(16, 53, 42, 0.12);
         }
     </style>
 </head>
-<body class="min-h-screen text-[#10352A] flex flex-col justify-between selection:bg-[#E64A19] selection:text-white">
+<body style="background-color: #FEF8E0 !important;" class="text-poster-green font-sans min-h-screen flex flex-col justify-between selection:bg-poster-orange selection:text-white">
 
-    <!-- Header / Nav -->
-    <header class="w-full py-6 px-6 md:px-12 flex justify-between items-center border-b border-[#10352A]/10 bg-[#FEF8E0]/80 backdrop-blur-md sticky top-0 z-50">
-        <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-[#10352A] flex items-center justify-center text-[#FEF8E0] font-bold text-xl shadow-md">
-                R
-            </div>
-            <div>
-                <span class="font-extrabold text-lg tracking-wider uppercase block leading-none">Roots & Wings</span>
-                <span class="text-xs text-[#E64A19] font-semibold tracking-widest uppercase">Fellowship</span>
-            </div>
+    <!-- Top Bar -->
+    <div class="bg-poster-green text-poster-bg py-3 px-4 text-center text-xs sm:text-sm font-extrabold tracking-widest uppercase border-b-2 border-poster-gold flex flex-col md:flex-row items-center justify-between gap-3 max-w-7xl mx-auto w-full shadow-md">
+        <div class="flex items-center space-x-3">
+            <img src="logo.jpg" alt="Logo" class="h-9 w-9 sm:h-10 sm:w-10 rounded-full object-cover border-2 border-poster-gold shadow-sm">
+            <span class="tracking-wider text-xs sm:text-sm">ROOTS & WINGS PRESENTS</span>
         </div>
-        <div>
-            <a href="#register" class="bg-[#10352A] text-[#FEF8E0] px-5 py-2.5 rounded-full text-sm font-bold shadow-lg hover:bg-[#0A241C] transition-all transform hover:-translate-y-0.5">
-                Reserve Seat
+        <div class="flex items-center space-x-3 text-xs lowercase font-bold tracking-normal">
+            <span class="text-poster-gold uppercase text-[10px] font-black tracking-widest">Follow Us:</span>
+            <a href="https://www.instagram.com/rootandwings1/" target="_blank" class="flex items-center space-x-1 bg-poster-greenDark hover:bg-emerald-900 text-white px-3 py-1.5 rounded-full border border-poster-gold/40 transition">
+                <span>Instagram</span>
             </a>
+            <a href="https://www.tiktok.com/@rootandwings?is_from_webapp=1&sender_device=pc" target="_blank" class="flex items-center space-x-1 bg-poster-greenDark hover:bg-emerald-900 text-white px-3 py-1.5 rounded-full border border-poster-gold/40 transition">
+                <span>TikTok</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Header & Hero Section -->
+    <header class="pt-8 pb-6 px-4">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <div class="flyer-double-border rounded-3xl p-6 sm:p-10 max-w-2xl mx-auto transition">
+                <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-poster-green uppercase leading-none">IN-LAWS</h1>
+                <div class="my-1.5 sm:my-2"><span class="font-serif italic text-poster-gold text-2xl sm:text-3xl font-bold">or</span></div>
+                <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-poster-orange uppercase leading-none">OUTLAWS</h1>
+                <div class="mt-6 flex flex-wrap items-center justify-center gap-2">
+                    <span class="bg-poster-orange text-white font-extrabold text-xs px-3.5 py-2 rounded-lg uppercase tracking-wider shadow-sm">THEME:</span>
+                    <div class="bg-poster-green text-white font-bold text-xs sm:text-sm px-4 py-2 rounded-lg uppercase tracking-wider text-center shadow-sm">NAVIGATING FAMILY DYNAMICS IN RELATIONSHIPS AND MARRIAGE</div>
+                </div>
+            </div>
+
+            <!-- Countdown Timer -->
+            <div class="bg-poster-whiteCanvas border-2 border-poster-green/80 rounded-2xl p-5 sm:p-6 max-w-lg mx-auto shadow-xl">
+                <p class="text-xs uppercase tracking-widest text-poster-orange font-black mb-3">⏳ COUNTDOWN TO EVENT</p>
+                <div class="grid grid-cols-4 gap-2.5 sm:gap-3">
+                    <div class="bg-poster-green text-white p-3 rounded-xl shadow-inner border border-poster-gold/30"><span id="days" class="font-display text-2xl sm:text-3xl font-black text-poster-gold block">00</span><span class="text-[10px] font-extrabold uppercase text-stone-300 block mt-1">Days</span></div>
+                    <div class="bg-poster-green text-white p-3 rounded-xl shadow-inner border border-poster-gold/30"><span id="hours" class="font-display text-2xl sm:text-3xl font-black text-poster-gold block">00</span><span class="text-[10px] font-extrabold uppercase text-stone-300 block mt-1">Hours</span></div>
+                    <div class="bg-poster-green text-white p-3 rounded-xl shadow-inner border border-poster-gold/30"><span id="minutes" class="font-display text-2xl sm:text-3xl font-black text-poster-gold block">00</span><span class="text-[10px] font-extrabold uppercase text-stone-300 block mt-1">Mins</span></div>
+                    <div class="bg-poster-green text-white p-3 rounded-xl shadow-inner border border-poster-gold/30"><span id="seconds" class="font-display text-2xl sm:text-3xl font-black text-poster-orange block">00</span><span class="text-[10px] font-extrabold uppercase text-poster-gold block mt-1">Secs</span></div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Main Content Container -->
-    <main class="max-w-6xl mx-auto px-6 py-12 md:py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center flex-grow">
-        
-        <!-- Left Column: Event Details & Flyer -->
-        <div class="lg:col-span-7 space-y-6">
-            <div class="inline-block bg-[#E64A19]/10 text-[#E64A19] text-xs font-extrabold uppercase px-3 py-1.5 rounded-full tracking-wider">
-                🎉 Special Relationship & Marriage Event
-            </div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-[#10352A]">
-                In-Laws <span class="text-[#E64A19]">or</span> Outlaws
-            </h1>
-            <p class="text-lg md:text-xl text-[#333333] font-medium leading-relaxed">
-                Navigating Family Dynamics in Relationships and Marriage. Join us for an eye-opening, life-transforming conversation designed to build healthier marital foundations.
-            </p>
-
-            <!-- Event Meta Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                <div class="bg-white p-5 rounded-2xl border-2 border-[#10352A]/10 shadow-sm flex items-start gap-4">
-                    <div class="text-2xl">📅</div>
-                    <div>
-                        <h3 class="font-bold text-sm text-[#10352A] uppercase tracking-wider">Date & Time</h3>
-                        <p class="text-sm text-[#333333] mt-1 font-medium">Saturday, 28th Nov. 2026<br><span class="text-[#E64A19] font-bold">12:00 PM WAT</span></p>
-                    </div>
-                </div>
-                <div class="bg-white p-5 rounded-2xl border-2 border-[#10352A]/10 shadow-sm flex items-start gap-4">
-                    <div class="text-2xl">📍</div>
-                    <div>
-                        <h3 class="font-bold text-sm text-[#10352A] uppercase tracking-wider">Event Address & Location</h3>
-                        <p class="text-sm text-[#333333] mt-1 font-medium">Plot 3, Tijani Towoshola St., Off Odemuyiwa St., Seliat Bus Stop, Egbeda, Lagos.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Right Column: Registration Card -->
-        <div id="register" class="lg:col-span-5 bg-white p-8 md:p-10 rounded-3xl border-4 border-[#10352A] shadow-2xl relative overflow-hidden">
-            <div class="absolute top-0 left-0 right-0 h-3 bg-[#10352A]"></div>
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-6 w-full flex-grow space-y-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
             
-            <div class="mb-8">
-                <h2 class="text-2xl font-extrabold text-[#10352A] uppercase tracking-tight">Secure Your Seat</h2>
-                <p class="text-sm text-gray-600 mt-1">Fill out the form below to register and get your instant booking pass.</p>
+            <!-- Flyer Container -->
+            <div class="bg-poster-whiteCanvas border-4 border-poster-green/80 rounded-3xl p-5 sm:p-6 shadow-2xl flex flex-col justify-between">
+                <div class="rounded-2xl overflow-hidden border-2 border-poster-green/20 shadow-md">
+                    <img src="https://raw.githubusercontent.com/ayodelemofifoluwa/Root-and-wings-registration-form/main/IN-LAWS%20OR%20OUTLAWS.jpeg" alt="Flyer" class="w-full h-auto object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="grid grid-cols-2 gap-3 mt-5">
+                    <div style="background-color: #FEF8E0;" class="border border-poster-green/30 p-3.5 rounded-xl text-center"><span class="block text-poster-green/80 text-[10px] font-black uppercase">Date & Time</span><span class="text-xs sm:text-sm font-black text-poster-green">Sat, 28th Nov. 2026 | 12 PM</span></div>
+                    <div style="background-color: #FEF8E0;" class="border border-poster-green/30 p-3.5 rounded-xl text-center"><span class="block text-poster-green/80 text-[10px] font-black uppercase">Venue</span><span class="text-xs sm:text-sm font-black text-poster-green">Egbeda, Lagos State</span></div>
+                </div>
             </div>
 
-            <!-- Form -->
-            <form id="registrationForm" class="space-y-5">
+            <!-- Registration Form Card -->
+            <div class="flyer-double-border rounded-3xl p-6 sm:p-8 shadow-2xl flex flex-col justify-between relative overflow-hidden">
+                <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-poster-orange via-poster-gold to-poster-orange"></div>
                 <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-[#10352A] mb-2">Full Name</label>
-                    <input type="text" id="fullName" required maxlength="100" placeholder="e.g. Ayodele Mofifoluwa" 
-                        class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#10352A] focus:outline-none transition-colors text-sm font-medium bg-[#FEF8E0]/30">
+                    <div class="flex justify-center mb-5">
+                        <img src="logo.jpg" alt="Logo" class="h-20 sm:h-24 object-contain rounded-xl border border-poster-green/20 shadow-sm">
+                    </div>
+                    <h2 class="font-display text-2xl sm:text-3xl font-black text-poster-green text-center mb-1 uppercase">Reserve Your Seat</h2>
+                    <p class="text-stone-600 text-center text-xs sm:text-sm font-medium mb-6">For single youths and young married couples. Free entry!</p>
+
+                    <!-- Secured Registration Form -->
+                    <form id="registrationForm" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-black uppercase tracking-widest text-poster-orange mb-1.5">Full Name</label>
+                            <input type="text" id="fullName" required maxlength="100" style="background-color: #FEF8E0;" class="w-full border-2 border-poster-green/35 focus:border-poster-orange rounded-xl px-4 py-3.5 text-poster-green font-medium text-sm focus:outline-none transition" placeholder="e.g. John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-black uppercase tracking-widest text-poster-orange mb-1.5">Gmail Address</label>
+                            <input type="email" id="email" required maxlength="100" style="background-color: #FEF8E0;" class="w-full border-2 border-poster-green/35 focus:border-poster-orange rounded-xl px-4 py-3.5 text-poster-green font-medium text-sm focus:outline-none transition" placeholder="yourname@gmail.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-black uppercase tracking-widest text-poster-orange mb-1.5">Phone Number</label>
+                            <input type="tel" id="phone" required maxlength="20" style="background-color: #FEF8E0;" class="w-full border-2 border-poster-green/35 focus:border-poster-orange rounded-xl px-4 py-3.5 text-poster-green font-medium text-sm focus:outline-none transition" placeholder="e.g. 08012345678">
+                        </div>
+                        <button type="submit" id="submitBtn" class="w-full bg-poster-orange hover:bg-poster-orangeHover text-white font-black text-base sm:text-lg py-4 rounded-xl shadow-xl transition uppercase tracking-wider cursor-pointer mt-2 border-b-4 border-amber-950">REGISTER NOW</button>
+                    </form>
+
+                    <div id="successMessage" class="hidden mt-6 bg-poster-green border-2 border-poster-gold text-white p-5 rounded-2xl text-center space-y-3">
+                        <h3 class="font-display font-extrabold text-xl text-poster-gold">🎉 Registration Successful!</h3>
+                        <p class="text-xs sm:text-sm text-stone-200">Your seat is reserved. A confirmation email has been dispatched to your Gmail inbox!</p>
+                        
+                        <!-- Add to Google Calendar Button -->
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=In-Laws+or+Outlaws+Seminar&dates=20261128T110000Z/20261128T140000Z&details=Navigating+Family+Dynamics+in+Relationships+and+Marriage+hosted+by+Roots+%26+Wings.&location=Plot+3,+Tijani+Towoshola+St.,+Egbeda,+Lagos" 
+                           target="_blank" 
+                           class="inline-block w-full bg-poster-gold hover:bg-amber-600 text-poster-greenDark font-black text-xs py-3 px-4 rounded-xl uppercase tracking-wider transition shadow-md">
+                            📅 Add Event to Google Calendar ↗
+                        </a>
+                    </div>
                 </div>
 
-                <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-[#10352A] mb-2">Email Address</label>
-                    <input type="email" id="email" required maxlength="150" placeholder="e.g. you@example.com" 
-                        class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#10352A] focus:outline-none transition-colors text-sm font-medium bg-[#FEF8E0]/30">
+                <div class="mt-6 pt-5 border-t border-poster-green/20 space-y-2">
+                    <button onclick="copyEventDetails()" style="background-color: #FEF8E0;" class="w-full flex items-center justify-center space-x-2 hover:bg-stone-200 text-poster-green text-xs font-bold py-3.5 px-4 rounded-xl border border-poster-green/30 transition">
+                       <span id="copyBtnText">📋 Copy Event Details & Location</span>
+                    </button>
                 </div>
-
-                <div>
-                    <label class="block text-xs font-bold uppercase tracking-wider text-[#10352A] mb-2">Phone Number</label>
-                    <input type="tel" id="phone" required maxlength="20" placeholder="e.g. 08012345678" 
-                        class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#10352A] focus:outline-none transition-colors text-sm font-medium bg-[#FEF8E0]/30">
-                </div>
-
-                <button type="submit" id="submitBtn" 
-                    class="w-full bg-[#10352A] text-[#FEF8E0] py-4 rounded-xl font-bold uppercase tracking-wider text-sm shadow-xl hover:bg-[#0A241C] transition-all transform hover:-translate-y-0.5 active:translate-y-0">
-                    Complete Registration 🚀
-                </button>
-            </form>
-
-            <!-- Success Message Box -->
-            <div id="successMessage" class="hidden mt-6 p-4 bg-[#FEF8E0] border-2 border-[#10352A] rounded-2xl text-center">
-                <p class="font-extrabold text-[#10352A] text-base">Seat Successfully Reserved! 🎉</p>
-                <p class="text-xs text-gray-700 mt-1">Check your email for your confirmation details and flyer pass.</p>
             </div>
         </div>
 
+        <!-- Google Maps Section -->
+        <div class="bg-poster-whiteCanvas border-4 border-poster-green/80 rounded-3xl p-6 sm:p-8 shadow-2xl">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-5">
+                <div>
+                    <span class="inline-block bg-poster-green text-poster-gold text-[10px] font-extrabold px-3 py-1 rounded-full border border-poster-gold uppercase mb-2">Event Address & Location</span>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-poster-green">Plot 3, Tijani Towoshola St., Off Odemuyiwa St., Seliat Bus Stop, Egbeda, Lagos.</h3>
+                </div>
+                <a href="https://maps.google.com/?q=Plot+3,+Tijani+Towoshola+St.,+Egbeda,+Lagos" target="_blank" class="inline-flex items-center justify-center bg-poster-orange text-white font-black text-xs px-5 py-3.5 rounded-xl hover:bg-poster-orangeHover transition uppercase tracking-wider shadow-md">Open in Google Maps ↗</a>
+            </div>
+            <div class="w-full h-72 sm:h-96 rounded-2xl overflow-hidden border-2 border-poster-green/40 shadow-inner">
+                <iframe title="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.385558117765!2d3.2842!3d6.6015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b905555555555%3A0x123456789abcdef!2sEgbeda%2C%20Lagos!5e0!3m2!1sen!2sng!4v1600000000000!5m2!1sen!2sng" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer class="w-full py-8 px-6 bg-[#0A241C] text-[#FEF8E0] text-center border-t border-[#10352A] mt-12">
-        <div class="flex justify-center gap-6 mb-4">
-            <a href="https://www.instagram.com/rootandwings1/" target="_blank" class="text-[#C68B27] hover:text-white text-sm font-bold tracking-wider transition-colors">Instagram</a>
-            <a href="https://www.tiktok.com/@rootandwings?is_from_webapp=1&sender_device=pc" target="_blank" class="text-[#C68B27] hover:text-white text-sm font-bold tracking-wider transition-colors">TikTok</a>
-        </div>
-        <p class="text-xs uppercase tracking-widest text-[#C68B27]">© 2026 Roots & Wings Fellowship. All rights reserved.</p>
+    <footer class="bg-poster-green text-stone-300 border-t-4 border-poster-orange py-8 px-4 text-center space-y-4 text-xs mt-12">
+        <p>© 2026 Roots & Wings. All rights reserved.</p>
+        <p class="font-medium">Developed by <a href="https://github.com/ayodelemofifoluwa" target="_blank" class="text-poster-gold hover:text-white underline font-extrabold transition">Ayodele Mofifoluwa</a></p>
     </footer>
 
-    <!-- Frontend Script for API Connection -->
+    <!-- Secured Client Script Logic -->
     <script>
-        const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE'; // Replace with your actual web app URL if needed
+        const eventDate = new Date("November 28, 2026 12:00:00 GMT+0100").getTime();
+        const timer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+            if (distance < 0) { clearInterval(timer); return; }
+            document.getElementById("days").innerText = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+            document.getElementById("hours").innerText = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+            document.getElementById("minutes").innerText = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+            document.getElementById("seconds").innerText = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
+        }, 1000);
 
-        const form = document.getElementById('registrationForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const successMessage = document.getElementById('successMessage');
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw4_7g5FTuuS81haV79EGB5yNsdH44G98qua8Yxxnme3rr3m7BNl96L0HFZ29-zEGd1/exec";
 
-        form.addEventListener('submit', e => {
+        let lastSubmissionTime = 0;
+
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Processing... ⏳';
+            
+            const now = Date.now();
+            if (now - lastSubmissionTime < 5000) {
+                alert("Please wait a few seconds before submitting again.");
+                return;
+            }
 
-            const payload = {
-                fullName: document.getElementById('fullName').value.trim(),
-                email: document.getElementById('email').value.trim(),
-                phone: document.getElementById('phone').value.trim()
+            const btn = document.getElementById('submitBtn');
+            
+            const fullNameRaw = document.getElementById('fullName').value.trim();
+            const emailRaw = document.getElementById('email').value.trim();
+            const phoneRaw = document.getElementById('phone').value.trim();
+
+            if (!fullNameRaw || !emailRaw || !phoneRaw) {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailRaw)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            btn.disabled = true;
+            btn.textContent = "SECURING SEAT...";
+            lastSubmissionTime = now;
+
+            const formData = {
+                fullName: fullNameRaw,
+                email: emailRaw,
+                phone: phoneRaw
             };
 
-            // If scriptURL is set, send data. Otherwise show mock success for testing
-            if(scriptURL && scriptURL.includes('macros.s')) {
-                fetch(scriptURL, { method: 'POST', body: JSON.stringify(payload) })
-                    .then(response => response.json())
-                    .then(data => {
-                        form.reset();
-                        submitBtn.classList.add('hidden');
-                        successMessage.classList.remove('hidden');
-                    })
-                    .catch(error => {
-                        alert('Registration error. Please try again.');
-                        submitBtn.disabled = false;
-                        submitBtn.textContent = 'Complete Registration 🚀';
-                    });
-            } else {
-                setTimeout(() => {
-                    form.reset();
-                    submitBtn.classList.add('hidden');
-                    successMessage.classList.remove('hidden');
-                }, 1000);
-            }
+            fetch(SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                body: JSON.stringify(formData)
+            }).then(() => {
+                document.getElementById('registrationForm').reset();
+                btn.disabled = false;
+                btn.textContent = "REGISTER NOW";
+                
+                document.getElementById('registrationForm').style.display = 'none';
+                document.getElementById('successMessage').classList.remove('hidden');
+            }).catch(err => {
+                alert('Connection error. Please try again.');
+                btn.disabled = false;
+                btn.textContent = "REGISTER NOW";
+            });
         });
+
+        function copyEventDetails() {
+            const details = "In-Laws or Outlaws Event\nDate: Saturday, Nov 28, 2026 at 12:00 PM WAT\nVenue: Plot 3, Tijani Towoshola St., Egbeda, Lagos.";
+            navigator.clipboard.writeText(details).then(() => {
+                const btnText = document.getElementById('copyBtnText');
+                btnText.textContent = "✓ Copied to Clipboard!";
+                setTimeout(() => { btnText.textContent = "📋 Copy Event Details & Location"; }, 2500);
+            });
+        }
     </script>
 </body>
 </html>
